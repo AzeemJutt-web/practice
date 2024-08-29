@@ -4,938 +4,1135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <base href="/Users/DELL/OneDrive/Desktop/web development/">
+    <title>Home</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Family -->
     <link
         href="https://fonts.googleapis.com/css2?family=Capriola&family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Capriola&family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+    <!-- Font Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
     <style>
-        
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-h3, p {
-    font-weight: normal;
-    font-style: normal;
-}
-p {
-    color: #6e6d6d;
-    font-family: "poppins", sans-serif;
-    line-height: 30px;
-}
+        body {
+            width: 100%;
+        }
 
-.bar {
-    width: 100%;
-    border: 1px hidden;
-    background-color: #0295d1;
-    padding: 1em;
-    padding-bottom: 2em;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    height: 95px;
-}
-.logo {
-    float: left;
-    margin-top: 0px;
-    margin-left: 50px;
-    width: 70px;
-    height: 70px;
-}
-.advibe {
-    float: left;
-    margin-top: 0.2em;
-    margin-left: 0.5em;
-    color: white;
-    font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 35px;
-    
-}
-.ul {
-    float: left;
-    list-style-type: none;
-    overflow: hidden;
-    border: 1px hidden;
-    padding: 0px;
-    margin-top: 0.5em;
-    margin-left: 15%;
-}
-.li {
-    font-size: 15px;
-    font-family: "poppins", sans-serif;
-    color: white;
-    
-    padding: 13px 25px;
-    display: inline-block;
-    border-right: 1px hidden black;
-    width: 120px;
-    color: white;
-    font-family: verdana;
-}
-.a {
-    text-decoration: none;
-    color: white;
-}
-.a:hover {
-    color: blue;
-}
-.bton {
-    
-    display: flex;
-    padding: 0.5em 1.5em;
-    border-radius: 25px;
-    background-color: #ffdcce;
-    color: black;
-    margin-left: 84%;
-    margin-top: 1em;
-    border: 1px hidden;
-    height: 7vh;
-    width: 10vw;
-    align-items: center;
-    justify-content: center;
-}
-.bton:hover {
-    background-color: rgb(253, 174, 143);
-    cursor: pointer;
-}
-.main {
-    display: flex;
-    width: 100%;
-    background-image: linear-gradient(to bottom right, darkblue, skyblue);
-    height: calc(100% - 95px);
-    padding-bottom: 9vh;
-}
-.f-div1 {
-    margin-top: 19vh;
-    margin-left: 5vw;
-}
-.txt {
-    
-    color: white;
-    font-size: 15px;
-    font-family: "Capriola", sans-serif ; 
-}
-.txt1 {
-    margin-top: 4vh;
-    margin-left: -0.4vh;
-    font-size: 30px;
-    font-family: "Archivo Black";
-    color: white;
-}
-.txt2 {
-    margin-top: 3.5vh;
-    margin-left: -0.4vh;
-    color: white;
-    line-height: 1.6em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.img {
-    
-    margin-top: 21vh;
-    margin-left: 5em;
-    height: 360px;
-    width: 550px;
-    border: 1px hidden;
-    border-radius: 30px;
-}
-.txt3 {
-    border: 1px hidden;
-    background-color: rgb(245 245 245);
-    margin-top: 6em;
-    margin-left: 3%;
-    padding: 1.6em 2.3em;
-    width: 70em;
-    font-family: "Poppins", sans-serif;
-    
-    color: #6c727d;
-    box-shadow: 0.1px 0.1px 3px 1px rgb(211, 211, 211);
-    font-size: 17px;
-    border-radius: 10px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 30px;
-    word-spacing: 4px;
-    text-align: center;
-}
-.f-box1 {
-    width: 100%;
-    display: flex;
-}
-.f-div2 {
-    margin-top: 4vh;
-    margin-left: 11vw;
-}
-.img1 {
-    margin-top: 24vh;
-    margin-left: 4%;
-    width: 34em;
-    height: 26em;
-}
-.txt4 {
-    height: 2.3em;
-    padding: 3.5px 10px;
-    border-radius: 35px;
-    background-color: #e3e5ff;
-    width: 9.5em;
-    margin-top: 7em;
-    color: #a039e7;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    
-}
-.txt5 {
-    font-size: 33px;
-    font-weight: 800;
-    font-family: sans-serif;
-    margin-top: 0.5em;
+        h3,
+        p {
+            font-weight: normal;
+            font-style: normal;
+        }
 
-}
-.txt6 {
-    margin-top: 1.75em;
+        p {
+            color: #6e6d6d;
+            font-family: "poppins", sans-serif;
+            line-height: 30px;
+        }
 
-    margin-bottom: 2em;
-    color: #6c727d;
-    font-family: "Poppins", sans-serif;
-    line-height: 30px;
-}
-.ul1 {
-    list-style-type: none;
-    margin-top: 1em;
+        .nav {
+            height: 15vh;
+            background-color: #0295d1;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            gap: 120px;
+        }
 
-}
-.txt7 {
-    color: #6c727d;
-    font-family: "poppins", sans-serif;
-    line-height: 30px;
-    margin-left: 4.7vw;
-    margin-top: 1.2em;
-    margin-bottom: 1em;
-}
-.txt8 {
-    color: #6e6d6d;
-    font-family: "poppins", sans-serif;
-    line-height: 30px;
-    margin-left: 4.7vw;
-    margin-top: 1.2em;
-    margin-bottom: 0.7em;
-}
-.f-box2 {
-    display: flex;
-    margin-bottom: 18vh;
-    width: 100%;
-}
-.f-div3 {
-    margin-left: 10vw;
-}
-.txt9 {
-    height: 2.3em;
-    padding: 3.5px 10px;
-    border-radius: 35px;
-    background-color: #e3e5ff;
-    width: 8.5em;
-    margin-top: 10.5em;
-    color: #a039e7;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    
-}
-.txt10 {
-    margin-top: 0.5em;
-    font-family: sans-serif;
-    font-size: 33px;
-    font-weight: 800;
-    color: #1e1e1e;
-}
-.txt11 {
-    color: #6e6d6d;
-    font-family: "poppins", sans-serif;
-    line-height: 30px;
-    margin-top: 1.6em;
-    font-weight: normal;
-    font-style: normal;
-    width: 30em;
-}
-.img2 {
-    width: 36.5em;
-    height: 32em;
-    margin-left: 5vw;
-    margin-top: 5vh;
+        .logo {
+            display: flex;
+            margin-left: 40px;
+            align-items: center;
+        }
 
-}
-.s1 {
-    width: 100%;
-    background-color: whitesmoke;
-    padding-top: 40px;
-    padding-bottom: 100px;
-    
-}
-.txt12 {
-    width: 7.5em;
-    
-    margin-top: 3em;
-    color: #a039e7;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    
-    background-color: #e3e5ff;
-    border-radius: 25px;
-    height: 2.2em;
-    padding: 3.5px 10px;
-}
-.txt13 {
-    font-family: sans-serif;
-    font-size: 33px;
-    font-weight: 800;
-    color: #1e1e1e;
-    text-align: center;
-    margin-top: 0.5em;
-}
-.fl-box1 {
-    display: flex;
-}
-.fl-div1 {
-    
-    border: 1px hidden;
-    padding: 2.75em 2.5em;
-    background-color: white;
-    margin-left: 3.7%;
-    margin-top: 3.5em;
-    box-shadow: 0.1px 0.1px 3px 1px #e9e9e9;
-    border-radius: 10px;
-    width: 29.3%;
-    
-}
+        .logo img {
+            width: 73px;
+            height: 73px;
+        }
 
-.fl-div2 {
-    
-    border: 1px hidden;
-    padding: 2.75em 2.5em;
-    background-color: white;
-    margin-left: 2.4%;
-    margin-top: 3.5em;
-    box-shadow: 0.1px 0.1px 3px 1px #e9e9e9;
-    border-radius: 10px;
-    width: 29.3%;
-    
-}
-.fl-div3 {
-    margin-top: 3.5em;
-    border: 1px hidden;
-    padding: 2.75em 2.5em;
-    background-color: white;
-    margin-left: 2.4%;
-    display: inline-block;
-    box-shadow: 0.1px 0.1px 3px 1px #e9e9e9;
-    border-radius: 10px;
-    width: 29.3%;
-}
-.txt14 {
-    text-align: center;
-    font-size: 24px;
-    font-family: "poppins", sans-serif;
-    margin-top: 1.7em;
-}
-.txt14:hover {
-    color: orange;
-}
-.txt15 {
-    text-align: center;
-    margin-top: 1.2em;
-}
-.txt16 {
-    text-align: center;
-    font-size: 24px;
-    font-family: "poppins", sans-serif;
-    margin-top: 1.7em;
-}
-.txt16:hover {
-    color: orange;
-}
-.txt17 {
-    text-align: center;
-    margin-top: 1.2em;
-}
-.txt18 {
-    text-align: center;
-    font-size: 24px;
-    font-family: "poppins", sans-serif;
-    margin-top: 1.7em;
-}
-.txt18:hover {
-    color: orange;
-}
-.txt19 {
-    text-align: center;
-    margin-top: 1.2em;
-}
+        .logo h2 {
+            font-size: 40px;
+            font-weight: 600;
+            margin-left: 30px;
+            color: white;
+        }
 
-.fl-box2 {
-    display: flex;
-    width: 100%;
-}
-.fl-div4 {
-    margin-left: 12vw;
-}
-.img7 {
-    width: 44vw;
-    margin-left: 4vw;
-    margin-top: 18vh;
-    height: 70vh;
-}
-.txt20 {
-    width: 7vw;
-    margin-top: 20vh;
-    color: #a039e7;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    background-color: #e3e5ff;
-    border-radius: 20px;
-    height: 6vh;
-    padding: 3.5px 10px ;
-}
-.txt21 {
-    font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 35px;
-    margin-top: 1.7vh;
+        .nav ul {
+            gap: 70px;
+            display: flex;
+            align-items: center;
+            background-color: #0295d1;
+        }
 
-}
-.txt22 {
-    margin-top: 3.7vh;
-}
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-family: verdana;
+            font-size: 18px;
+            transition: all 0.7s ease-in;
+        }
 
+        .nav a:hover {
+            color: blue;
+        }
 
-.fl-box3 {
-    display: flex;
-    width: 100%;
-    margin-top: 29vh;
-}
-.fl-div5 {
-    margin-left: 9.5vw;
-}
-.txt25 {
-    width: 20vh;
-    color: #a039e7;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    
-    background-color: #e3e5ff;
-    border-radius: 20px;
-    height: 6vh;
-    padding: 3.5px 10px ;   
-}
-.txt26 {
-    font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 35px;
+        .navbar-btn button {
+            background-color: orange;
+            padding: 20px;
+            height: 8vh;
+            margin-right: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease-in-out;
+            border-radius: 30px;
+        }
 
-    margin-top: 2.8vh;
-}
-.txt27 {
-    font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    margin-top: 9vh;
+        .navbar-btn button:hover {
+            border: 0.5px solid orange;
+            color: white;
+        }
 
-}
-.txt28 {
-    margin-top: 6vh;
-}
-.img8 {
-    margin-left: 6vw;
-    height: 80vh;
-    width: 104vh;
-    margin-top: -6vh;
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to bottom right, darkblue, skyblue);
+            height: calc(100% - 15vh);
+            padding-bottom: 55px;
+            gap: 50px;
+        }
 
-}
-.fl-box4 {
-    display: flex;
-    width: 100%;
-}
-.fl-div6 {
-    margin-left: 27vh;
-}
-.fl-div7 {
-    margin-left: 33vh;
-}
-.fl-div8 {
-    margin-left: 33vh;
-}
-.txt29 {
-    font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    font-size: 24px;
-    margin-top: 35vh;
-    color: #313030;
-}
-.txt30 {
-    margin-top: 3vh;
-    font-size: 18px;
-}
-.txt31 {
-    font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    font-size: 24px;
-    margin-top: 35vh;
+        .header-left {
+            margin-top: 15vh;
+        }
 
-    color: #313030;
-}
-.txt32 {
-    margin-top: 3vh;
+        .header-left p:nth-child(1) {
+            color: white;
+            font-size: 15px;
+            font-family: "Capriola", sans-serif;
+        }
 
-    font-size: 18px;
-}
-.txt33 {
-    font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    font-size: 24px;
-    margin-top: 35vh;
-    color: #313030;
-}
-.txt34 {
-    margin-top: 3vh;
-    font-size: 18px;
-}
-.s2 {
-    padding-top: 16vh;
-    background-color: #0295d1;
-    margin-bottom: 0;
-}
-.fl-box5 {
-    display: flex;
-    margin-bottom: 10vh;
-    width: 100%;
-}
-.img9 {
-    width: 90px;
-    height: 90px;
-    margin-left: 22vh;
-}
-.txt35 {
-    font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 35px;
-    margin-left: 20vh;
-    color: white;
-}
-.txt36 {
-    font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', "monospace", sans-serif;
-    font-size: 25px;
-    margin-left: 40vh;
-    color: white;
-}
-.ul2 {
-    list-style-type: none;
-    
-    font-family: "poppins", sans-serif;
-    margin-top: 2em;
-    margin-left: 40vh;
-}
-.li2 {
-    margin-bottom: 1em;
-    font-size: 17px;
-}
-.link {
-    text-decoration: none;
-    color: white;
-}
-.link:hover {
-    color: rgb(233, 153, 4);
-}
-.txt37 {
-    font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', "monospace", sans-serif;
-    font-size: 25px;
-    margin-left: 40vh;
-    color: white;
-}
-.link1 {
-    color: white;
-    margin-left: 1vh;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: "poppins", sans-serif;
-}
-.link1:hover {
-    color: rgb(233, 153, 4);
-}
-#icon {
-    color: rgb(233, 153, 4);
-    margin-left: 40vh;
-    margin-top: 4vh;
-    font-size: 17px;
-}
-.txt38 {
-    color: white;
-    margin-left: 44.5vh;
-    margin-top: -4vh;
-}
-.footer {
-    text-align: center;
-    margin-top: 6vh;
-    margin-bottom: 5vh;
-}
-.hr {
-    width: 90%;
-    margin-left: 10vh;
-}
-.txt39 {
-    color: white;
-} 
+        .header-left h1 {
+            margin-top: 4vh;
+            margin-left: -0.4vh;
+            font-size: 30px;
+            font-family: "Archivo Black";
+            color: white;
+        }
+
+        .header-left p:nth-child(3) {
+            margin-top: 3.5vh;
+            margin-left: -0.4vh;
+            color: white;
+            line-height: 1.6em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .header-right {
+            width: 550px;
+        }
+
+        .header-right img {
+            margin-top: 15vh;
+            height: 360px;
+            width: 100%;
+            border-radius: 30px;
+        }
+
+        .imp-para {
+            background-color: rgb(245 245 245);
+            margin-top: 21vh;
+            padding: 1.6em 2.3em;
+            width: 93%;
+            font-family: "Poppins", sans-serif;
+            color: #6c727d;
+            box-shadow: 0.1px 0.1px 3px 1px rgb(211, 211, 211);
+            font-size: 17px;
+            border-radius: 10px;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 30px;
+            word-spacing: 4px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .integration {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .int-left {
+            width: 45%;
+        }
+
+        .int-left img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .int-right {
+            width: 45%;
+        }
+
+        .int-right p:nth-child(1) {
+            height: 6vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3.5px 10px;
+            border-radius: 35px;
+            background-color: #e3e5ff;
+            width: 9.5em;
+            margin-top: 16vh;
+            color: #a039e7;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        .int-right h2 {
+            font-size: 33px;
+            font-weight: 800;
+            font-family: sans-serif;
+            margin-top: 0.5em;
+        }
+
+        .int-right p:nth-child(3) {
+            margin-top: 5vh;
+            margin-bottom: 7vh;
+            font-family: "Poppins", sans-serif;
+            line-height: 30px;
+            width: 80%;
+        }
+
+        .int-right ul {
+            list-style-type: none;
+            margin-top: 1em;
+        }
+
+        .int-right i {
+            color: #fd5757;
+            margin-left: 0;
+            font-size: 30px;
+        }
+
+        .ul-p1 {
+            font-family: "poppins", sans-serif;
+            line-height: 30px;
+            margin-left: 4.7vw;
+            margin-top: 1.2em;
+            margin-bottom: 1em;
+            width: 90%;
+        }
+
+        .ul-p2 {
+            font-family: "poppins", sans-serif;
+            line-height: 30px;
+            margin-left: 4.7vw;
+            margin-top: 1.2em;
+            margin-bottom: 0.7em;
+            width: 90%;
+        }
+
+        .int-right h3:nth-child(2) {
+            margin-left: 15%;
+        }
+
+        /*3rd Page*/
+        .ecomerce {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+            gap: 50px;
+        }
+
+        .eco-left {
+            width: 40%;
+        }
+
+        .eco-right {
+            width: 40%;
+        }
+
+        .eco-left p:nth-child(1) {
+            height: 2.3em;
+            padding: 3.5px 10px;
+            border-radius: 35px;
+            background-color: #e3e5ff;
+            width: 8.5em;
+            color: #a039e7;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        .eco-left h2 {
+            margin-top: 0.5em;
+            font-family: sans-serif;
+            font-size: 33px;
+            font-weight: 800;
+            color: #1e1e1e;
+            width: 85%;
+        }
+
+        .eco-left p:nth-child(3) {
+            font-family: "poppins", sans-serif;
+            line-height: 30px;
+            margin-top: 1.6em;
+            font-weight: normal;
+            font-style: normal;
+            width: 30em;
+        }
+
+        .eco-right img {
+            width: 95%;
+        }
+
+        section {
+            width: 100%;
+            background-color: whitesmoke;
+            padding-top: 40px;
+            padding-bottom: 100px;
+        }
+
+        /*4th Page*/
+        .feature {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .feature p {
+            width: 7.5em;
+            margin-top: 3em;
+            color: #a039e7;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            background-color: #e3e5ff;
+            border-radius: 25px;
+            height: 2.2em;
+            padding: 3.5px 10px;
+        }
+
+        .feature h2 {
+            font-family: sans-serif;
+            font-size: 33px;
+            font-weight: 800;
+            color: #1e1e1e;
+            text-align: center;
+            margin-top: 0.5em;
+        }
+
+        .feature-pic {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .feature-left {
+            width: 29%;
+            height: 100vh;
+            padding: 2.35em 2.5em;
+            background-color: white;
+            margin-top: 3.5em;
+            box-shadow: 0.1px 0.1px 3px 1px #e9e9e9;
+            border-radius: 10px;
+        }
+        .feature-left img {
+            width: 100%;
+            height: 60vh;
+        }   
+        .feature-left h3 {
+            text-align: center;
+            font-size: 24px;
+            font-family: "poppins", sans-serif;
+            margin-top: 1.7em;
+        }
+        .feature-left h3:hover {
+            color: orange;
+        }
+        .feature-left p {
+            text-align: center;
+            margin-top: 1.2em;
+        }
+        /*4th Page*/
+        .bot {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 140px;
+            margin-top: 16vh;
+        }
+        .bot-left {
+            width: 45%;
+        }
+        .bot-right {
+            width: 33%;
+            padding-top: 70px;
+        }
+        .bot-left img {
+            width: 100%;
+            height: 65vh;
+        }
+        .bot-right span {
+            
+            margin-top: 10vh;
+            color: #a039e7;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            background-color: #e3e5ff;
+            border-radius: 20px;
+            padding: 10px 40px ;
+        }
+        .bot-right h2 {
+            font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 35px;
+            margin-top: 1.7vh;
+            
+        }
+        .bot-right p {
+            margin-top: 3.7vh;
+            
+        }
+        /*5th Page*/
+        .benefit {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            margin-top: 16vh;
+        }
+        .beni-left {
+            width: 36%;
+        }
+        .beni-right {
+            width: 48%;
+        }
+        .beni-right img {
+            width: 100%;
+            height: 80vh;
+        }
+        .beni-left span {
+            color: #a039e7;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            background-color: #e3e5ff;
+            border-radius: 20px;
+            padding: 10px 30px;
+        }
+        .beni-left h2 {
+            font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 35px;
+            margin-top: 2.8vh;
+        }
+        .beni-left h4 {
+            font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            margin-top: 9vh;
+        }
+        .beni-left p {
+            margin-top: 6vh;
+        }
+        /*6th Page*/
+        .icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 150px;
+            padding-top: 15vh;
+        }
+        .icon-left {
+            width: 19%;
+        }
+        .icon-left img {
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 80%;
+            border-bottom-right-radius: 80%;
+            width: 60%;
+            height: 30vh;
+        }
+        .icon-left h2 {
+            font-family: "fantasy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 4vh;
+        }
+        .icon-left p {
+            font-size: 17.8px;
+            margin-top: 2vh;
+        }
+        .icon-left h2:hover {
+            color: orange;
+        }
+        /*Footer*/
+        footer {
+            background-color: #0295d1;
+        }
+        .footer {
+            padding-top: 15vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 180px;
+            color: white;
+        }
+        .ft-left, .ft-mid, .ft-right {
+            width: 20%;   
+        }
+        .ft-left img {
+            width: 93px;
+            height: 93px;
+        }
+        .ft-left h2 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .ft-mid ul {
+            margin-top: 5vh;
+            list-style-type: none;
+            gap: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        .ft-mid a {
+            font-size: 17px;
+            font-family: verdana;
+            transition: all 0.5s ease-in;
+        }
+        .ft-mid a:hover {
+            color: orange;
+        }
+        .ft-right i {
+            color: orange;
+        }
+        .mail, .map {
+            display: flex;
+            gap: 20px;
+        }
+        .mail {
+            margin-top: 7vh;
+        }
+        .mail a {
+            margin-top: -1vh;
+            font-size: 17px;
+            font-family: verdana;   
+            transition: all 0.5s ease-in;
+        }
+        .mail a:hover {
+            color: orange;
+        }
+        .map {
+            margin-top: 4vh;
+        }
+        .map p {
+            margin-top: -1vh;
+            color: white;
+        }
 
 
 
 
 
+        @media (max-width: 1171px) {
+            .feature-left img {
+                height: 55vh;
+            }
+            .feature-left {
+                padding-top: 3.5vh;
+            }
+        }
+        @media (max-width: 1115px) {
+            .header-left p:nth-child(1) {
+                font-size: 13.5px;
+            }
 
+            .header-left h1 {
+                font-size: 26px;
+            }
 
+            .header-left p:nth-child(3) {
+                width: 80%;
+            }
 
+            .header {
+                gap: 20px;
+            }
 
+            .header-right img {
+                height: 330px;
+            }
 
-@media (max-width: 600px) {
-    .bar {
-        width: 100%;
-        height: 60px;
-      
-    }
-    .ul {
-        display: none;
-    }
-    .advibe {
-        font-size: 30px;
-        margin-top: -0.2em;
-        margin-left: 0;
-    }
-    .bton {
-        width: 26vw;
-        margin-top: 0;
-        margin-left: 47vh;
-    }
-    .main {
-        height: calc(100% - 60px);
-        flex-direction: column;
-    }
-    .f-div1 {
-        margin-top: 10vh;
-        margin-left: 9vw;
-    }
-    .img {
-        width: 350px;
-        height: 300px;
-        margin-left: 0;
-        margin-left: 7.5vw;
-        margin-top: 15vh;
-    }
-    .txt3 {
-        width: 100%;
-        font-size: 12px;
-        word-spacing: 0;
-        margin-left: 0;
-    }
-    .f-box1 {
-        flex-direction: column;
-        width: 100%;
-    }
-    .img1 {
-        margin-top: 15vh;
-        margin-left: 0;
-        width: 26em;
-        height: 20em;
-    }
-    .f-div2 {
-        margin-top: 0;
-        margin-left: 8vw;
-    }
-    .f-box2 {
-        flex-direction: column;
-    }
-    .f-div3 {
-        margin-left: 2vw;
-        width: 100%;
-    }
-    .txt11 {
-        width: 25em;
-    }
-    .img2 {
-        width: 100%;
-        height: 26em;
-        margin-left: auto;
-    }
-    .s1 {
-        width: 100%;
-    }
-    .txt13 {
-        font-size: 30px;
-        font-weight: 800;
-    }
-    .fl-box1 {
-        flex-direction: column;
-        width: 100%;
-    }
-    .fl-div1, .fl-div2, .fl-div3 {
-        width: 90%;
-        margin-left: 5vw;
-    }
-    .fl-div2, .fl-div3 {
-        margin-top: 3vh;
-    }
-    .fl-box2{
-        flex-direction: column;
-        width: 100%;
-    }
-    .fl-div4 {
-        margin-left: 4vw;
-        justify-content: center;
-    }
-    .img7 {
-        margin-left: 0;
-        width: 100%;
-        height: 70vh;
-    }
-    .txt20 {
-        margin-left: auto;
-        display: inline-block;
-        width: 20vw;
-        align-items: center;
-        height: auto;
-    }
-    .fl-box3 {
-        flex-direction: column;
-        width: 100%;
-    }
-    .fl-div5 {
-        margin-left: 4vw;
-    }
-    .img8 {
-        height: 70vh;
-        width: 95%;
-        margin-left: 2vw;
-        margin-top: 5vh;
-    }
-    .fl-box4 {
-        flex-direction: column;
-        width: 100%;
-    }
-    .fl-div6, .fl-div7, .fl-div8 {
-        margin-left: 27vw; 
-        margin-top: -25vh;
-    }
-    .s2 {
-        width: 100%;
-    }
-    .fl-box5 {
-        width: 100%;
-    }
-}
+            .header-right {
+                width: 500px;
+            }
+        }
+        @media (max-width:1100px) {
+            .icon-left {
+                width: 21%;
+            }
+        }
+        @media (max-width: 1075px) {
+            .nav {
+                gap: 60px;
+            }
+
+            .nav ul {
+                gap: 40px;
+            }
+        }
+        @media (max-width: 1050px) {
+            .footer {
+                gap: 70px;
+            }
+        }
+        @media (max-width: 1040px) {
+            .header-right img {
+                height: 300px;
+            }
+
+            .header-right {
+                width: 470px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .header-left p:nth-child(3) {
+                width: 110%;
+            }
+
+            .header-right img {
+                margin-top: 7vh;
+                height: 300px;
+            }
+
+            .header-right {
+                width: 550px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .nav {
+                gap: 0;
+            }
+
+            .nav ul {
+                gap: 20px;
+                flex-direction: column;
+                margin-top: -1vh;
+            }
+
+            .navbar-btn button {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .navbar-btn {
+                margin-top: -2vh;
+                height: 20vh;
+                display: flex;
+                align-items: center;
+                background-color: #0295d1;
+            }
+
+            .int-left {
+                width: 40%;
+            }
+
+            .int-right {
+                width: 40%;
+            }
+
+            .int-left img {
+                height: 400px;
+            }
+
+            .integration p {
+                font-size: 15px;
+            }
+
+            .int-right p:nth-child(1),
+            .int-right h2,
+            .int-right p:nth-child(3) {
+                margin-left: 7%;
+            }
+            .feature-left {
+                width: 40%;
+                padding-top: 5vh;
+            }
+            .feature-pic {
+                gap: 40px;
+            }
+            .feature-left:nth-child(3) {
+                margin-top: 0;
+            }
+            .bot {
+                gap: 80px;
+            }
+            .icon-left {
+                width: 26%;
+            }
+            .icons {
+                gap: 80px;
+            }
+        }
+
+        @media (max-width: 950px) {
+            .int-left {
+                width: 100%;
+                text-align: center;
+            }
+
+            .int-left img {
+                width: 60%;
+            }
+
+            .int-right {
+                width: 100%;
+            }
+
+            .int-right i {
+                margin-left: 5%;
+                margin-bottom: 3vh;
+            }
+
+            .int-right p:nth-child(3) {
+                width: 65%;
+            }
+
+            .eco-left h2 {
+                font-size: 30px;
+            }
+
+            .eco-right img {
+                height: 450px;
+            }
+            .beni-left {
+                width: 90%;
+            }
+            .beni-right {
+                width: 70%;
+            }
+            .benefit {
+                gap: 20px;
+            }
+        }
+        @media (max-width: 875px) {
+            .eco-left p:nth-child(3) {
+                width: 80%;
+            }
+            .eco-left h2 {
+                font-size: 25px;
+            }
+            .ft-left, .ft-mid {
+                width: 30%;
+            }
+            .ft-right {
+                width: 50%;
+            }
+        }
+        @media (max-width: 830px) {
+            .icon-left {
+                width: 35%;
+            }
+            .icon-left p {
+                width: 80%;
+            }
+        }
+        @media (max-width: 768px) {
+            .bot {
+                margin-top: 10vh;
+                gap: 10px;
+            }
+            .bot-left {
+                width: 70%;
+            }
+            .bot-left img {
+                height: 75vh;
+            }
+            .bot-right {
+                width: 90%;
+            }
+        }
+        @media (max-width: 700px) {
+            .feature-left {
+                width: 60%;
+            }
+            .feature-pic {
+                gap: 0;
+            }
+            .feature-left:nth-child(2) {
+                margin-top: 8vh;
+            }
+            .feature-left:nth-child(3) {
+                margin-top: 8vh;
+            }
+        }
+        @media (max-width: 666px) {
+            .imp-para {
+                font-size: 16px;
+            }
+
+            .int-left img {
+                width: 80%;
+                object-fit: fill;
+            }
+
+            .ecomerce {
+                gap: 10px;
+            }
+
+            .eco-left {
+                width: 90%;
+            }
+
+            .eco-left p:nth-child(3) {
+                width: 90%;
+            }
+
+            .eco-right {
+                width: 90%;
+                justify-content: center;
+            }
+            .bot-left {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 615px) {
+            .header-left p:nth-child(3) {
+                width: 100%;
+            }
+        }
+        @media (max-width: 600px) {
+            .icon-left p {
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+        @media (max-width: 550px) {
+            .beni-right {
+                width: 80%;
+            }
+            .icon-left {
+                width: 40%;
+            }
+            .icons {
+                gap: 20px;
+            }
+        }
+        @media (max-width: 500px) {
+            .imp-para {
+                word-spacing: 1px;
+                font-size: 15px;
+            }
+            .feature-left {
+                width: 80%;
+            }
+            .bot-left {
+                width: 90%;
+            }
+            .bot-left img {
+                height: 65vh;
+            }
+            .beni-right img {
+                height: 70vh;
+            }
+            .icon-left {
+                width: 50%;
+            }
+            .icons {
+                gap: 50px;
+            }
+            .ft-left h2 {
+                font-size: 35px;
+            }
+            .ft-mid a {
+                font-size: 16px;
+            }
+            .ft-mid ul {
+                gap: 10px;
+            }
+        }
+        @media (max-width: 460px) {
+            .ft-right {
+                width: 80%;
+            }
+        }
+        @media (max-width: 450px) {
+            .icon-left img {
+                width: 70%;
+            }
+        }
+        @media (max-width: 400px) {
+            .int-left img {
+                height: 350px;
+            }
+
+            .int-right h3:nth-child(2) {
+                margin-left: 20%;
+            }
+            .ft-left, .ft-mid {
+                width: 80%;
+            }
+        }
+        @media (max-width: 375px) {
+            .feature-left {
+                width: 90%;
+            }
+            .bot-left {
+                width: 98%;
+            }
+            .beni-right {
+                width: 90%;
+            }
+            .icon-left img {
+                width: 80%;
+            }
+        }
+        @media (max-width: 360px) {
+            .logo h2 {
+                font-size: 30px;
+                margin-left: 10px;
+            }
+        }
     </style>
 </head>
 
 <body>
-
-    <div class="bar">
-        <a href=""><img src="https://advibe.xyz/assets/images/logo/logo-1.png" alt="logo" class="logo">
-
-            <h2 class="advibe">Advibe</h2>
-        </a>
-        <ul class="ul">
-            <li class="li"><a class="a" href="">Home</a></li>
-            <li class="li"><a class="a" href="">About</a></li>
-            <li class="li"><a class="a" href="">Services</a></li>
-            <li class="li"><a class="a" href="">Term&Policy</a></li>
-        </ul>
-        <button class="bton">Contact us</button>
-    </div>
-    <flexbox class="main">
-        <div class="f-div1">
-            <p class="txt">
+    <nav class="nav navbar navbar-expand-lg">
+        <div class="logo">
+            <a href="#"><img src="https://advibe.xyz/assets/images/logo/logo-1.png" alt="logo"></a>
+            <a href="">
+                <h2>Advibe</h2>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Services</a></li>
+                <li class="nav-item"><a href="#">Term&Policy</a></li>
+            </ul>
+            <div class="navbar-btn">
+                <button class="btn">Contact Us</button>
+            </div>
+        </div>
+    </nav>
+    <div class="header">
+        <div class="header-left">
+            <p>
                 AD FRAUD SOLUTION
             </p>
-            <h1 class="txt1">
+            <h1>
                 Filter out bots <br> and fraud to <br> increase <br> performance.
             </h1>
-            <p class="txt2">
+            <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus pariatur ex. <br> Qui possimus
                 distinctio,
                 quis amet nobis reiciendis similique delectus excepturi <br> molestias asperiores consequuntur suscipit
                 tenetur cupiditate dignissimos fuga. <br> Dignissimos, enim.
             </p>
         </div>
-
-        <a href=""><img class="img" src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124621/logo1_aiuwr4.jpg" alt="pic"></a>
-    </flexbox>
-    <br>
-    <div class="txt3">
-        AdVibe is an advanced ad fraud solution, eliminating bots and fraud to boost online ad performance. Its seamless
-        integration into<br><span style="margin-left: 1em;"> diverse web assets ensures immediate data access. AdVibe
-            not only minimizes e-commerce chargebacks but acts as a robust</span> <br> safeguard for merchant accounts.
-        Using cutting-edge algorithms and AI analytics, it guarantees genuine interactions and prevents<br><span
-            style="text-align: center;display: block;">programmatic fraud. Users must adhere to outlined terms, subject
-            to periodic updates.</span>
+        <div class="header-right">
+            <a href=""><img class="img"
+                    src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124621/logo1_aiuwr4.jpg" alt="pic"></a>
+        </div>
     </div>
-
-    <flexbox class="f-box1">
-        <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124606/googlelogo_bp7bje.png" alt="google" class="img1">
-
-        <div class="f-div2">
-            <p class="txt4">INTEGRATION</p>
-
-            <h2 class="txt5">See Your Data</h2>
-
-            <p class="txt6">
-                Integrating AdVibe into your web assets is a flexible and <br> simple process that gives you the ability
+    <div class="imp-para">
+        <p>AdVibe is an advanced ad fraud solution, eliminating bots and fraud to boost online ad performance. Its
+            seamless
+            integration intodiverse web assets ensures immediate data access. AdVibenot only minimizes e-commerce
+            chargebacks but acts as a robustsafeguard for merchant accounts.Using cutting-edge algorithms and AI
+            analytics, it guarantees genuine interactions and preventsprogrammatic fraud. Users must adhere to outlined
+            terms, subject to periodic updates.</p>
+    </div>
+    <!-- 2nd Page -->
+    <div class="integration">
+        <div class="int-left">
+            <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124606/googlelogo_bp7bje.png"
+                alt="integration-img">
+        </div>
+        <div class="int-right">
+            <p>INTEGRATION</p>
+            <h2>See Your Data</h2>
+            <p>
+                Integrating AdVibe into your web assets is a flexible and simple process that gives you the ability
                 to
-                get responses <br>immediately.
+                get responses immediately.
             </p>
-
             <ul class="ul1">
                 <li>
-                    <i class="fa fa-check-circle" aria-hidden="true"
-                        style="color: #fd5757; margin-left: 0; font-size: 30px;"></i>
-
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
                     <h3
-                        style="margin-top: -1.9em; margin-left: 15%; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        style="margin-top: -1.9em; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                         Flexible | Fits Most types of integrations</h3>
-
-                    <p class="txt7">AdVibe seamlessly integrates into any web asset. It <br> is easy to install and
+                    <p class="ul-p1">AdVibe seamlessly integrates into any web asset. It is easy to install and
                         manage,
-                        making it the perfect <br> solution for any application.</p>
+                        making it the perfect solution for any application.</p>
                 </li>
                 <li>
-                    <i class="fa fa-check-circle" aria-hidden="true"
-                        style="color: #fd5757; margin-left: 0; font-size: 30px;"></i>
-
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
                     <h3
-                        style="margin-top: -1.9em; margin-left: 15%; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        style="margin-top: -1.9em; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                         Immediate | Instant Access to Your Data</h3>
-
-                    <p class="txt8">Upon completion of integration, you will have <br> instant access to your data</p>
+                    <p class="ul-p2">Upon completion of integration, you will have instant access to your data</p>
                 </li>
             </ul>
         </div>
-    </flexbox>
-
-    <flexbox class="f-box2">
-        <div class="f-div3">
-        <p class="txt9">Ecommerce</p>
-        <h2 class="txt10">Stop Bad Actors From <br> Defrauding Your <br> ECommerce</h2>
-        <p class="txt11">AdVibe serves as a robust solution that not only minimizes <br> chargebacks but also acts as a
-            safeguard for your <br> merchant account, preventing potential losses of products <br> or services</p>
     </div>
-
-    <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124059/advibe_img3_mqamzw.webp" alt="pc" class="img2">
-    </flexbox>
-
-    <section class="s1">
-        <div>
-            <p class="txt12 mx-auto d-block">Features</p>
-            <h2 class="txt13">Collaborate With Confidence</h2>
+    <!-- 3rd Page -->
+    <div class="ecomerce">
+        <div class="eco-left">
+            <p>EcomMerce</p>
+            <h2>Stop Bad Actors From Defrauding Your ECommerce</h2>
+            <p>AdVibe serves as a robust solution that not only minimizes chargebacks but also acts as a
+                safeguard for your merchant account, preventing potential losses of products or services</p>
         </div>
-
-        <flexbox class="fl-box1">
-            <div class="fl-div1">
-                <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124512/advibe_img4_t86k9u.png" alt="img4" class="img4">
-                <h3 class="txt14">Ad Fraud</h3>
-                <p class="txt15">Send data from your data sources <br> to internal APIs to perform updates <br> or
-                    trigger business logic</p>
+        <div class="eco-right">
+            <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124059/advibe_img3_mqamzw.webp"
+                alt="ecomerce-pic">
+        </div>
+    </div>
+    <section>
+        <!-- 4th Page -->
+        <div class="feature">
+            <p>Features</p>
+            <h2>Collaborate With Confidence</h2>
+        </div>
+        <div class="feature-pic">
+            <div class="feature-left">
+                <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124512/advibe_img4_t86k9u.png"
+                    alt="img4">
+                <h3>Ad Fraud</h3>
+                <p>Send data from your data sources to internal APIs to perform updates or trigger business logic</p>
             </div>
-
-            <div class="fl-div2">
-                <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124525/advibe_img5_qbvzcn.png" alt="img5" class="img5">
-                <h3 class="txt16">Affiliate Marketing Fraud</h3>
-                <p class="txt17">Display your data as a table, list, or <br> card with no additional work or <br>
-                    dragging and dropping.</p>
+            <div class="feature-left">
+                <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124525/advibe_img5_qbvzcn.png"
+                    alt="img5">
+                <h3>Affiliate Marketing Fraud</h3>
+                <p>Display your data as a table, list, or card with no additional work or dragging and dropping.</p>
             </div>
-
-
-            <div class="fl-div3">
-                <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124539/advibe_img6_cpasdi.png" alt="img6" class="img6">
-                <h3 class="txt18">Misleading Ad Fraud</h3>
-                <p class="txt19">Misleading Ad Fraud serves as a <br> cautionary message in the dynamic <br> landscape
-                    of digital advertising.</p>
+            <div class="feature-left">
+                <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124539/advibe_img6_cpasdi.png"
+                    alt="img6">
+                <h3>Misleading Ad Fraud</h3>
+                <p>Misleading Ad Fraud serves as a cautionary message in the dynamic landscape of digital advertising.</p>
             </div>
-        </flexbox>
-
-        <flexbox class="fl-box2">
-            <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124554/advibe_img7_ilrdbz.png" alt="img7" class="img7">
-
-            <div class="fl-div4">
-                <p class="txt20">Bots</p>
-                <h2 class="txt21">Stop Bots From <br> Destroying Your ROI.</h2>
-                <p class="txt22">Regardless of your website's size, it inevitably attracts <br> undesired bot traffic.
-                    Stay vigilant against unwanted <br> automated visits.</p>
+        </div>
+        <!-- 4th Page -->
+         <div class="bot">
+            <div class="bot-left">
+                <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721124554/advibe_img7_ilrdbz.png" alt="img7">
             </div>
-        </flexbox>
-
-        <flexbox class="fl-box3">
-            <div class="fl-div5">
-                <p class="txt25">Benefits</p>
-                <h2 class="txt26">Stop Losing Money To <br> Programmatic Fraud.</h2>
-                <h4 class="txt27">Maxamize Your Programmatic Add</h4>
-                <p class="txt28">Your sales team's time is valueable. Wasting it on fake leads <br> from fraudulent
-                    sources costs more than the time spent <br> on dead leads and traffic.</p>
+            <div class="bot-right">
+                <span>Bots</span>
+                <h2>Stop Bots From Destroying Your ROI.</h2>
+                <p>Regardless of your website's size, it inevitably attracts undesired bot traffic.
+                    Stay vigilant against unwanted automated visits.</p>
             </div>
-            <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721125090/advibe_img8_lddk2p.webp" alt="img8" class="img8">
-        </flexbox>
-
-        <flexbox class="fl-box4">
-            <div class="fl-div6">
-                <h4 class="txt29">United</h4>
-                <p class="txt30">Our culture is open and <br> diverse, yet we are a united <br> team in accomplishing
-                    our <br> mission.</p>
+         </div>
+         <!-- 5th Page -->
+          <div class="benefit">
+            <div class="beni-left">
+                <span>Benefits</span>
+                <h2>Stop Losing Money To Programmatic Fraud.</h2>
+                <h4>Maxamize Your Programmatic Add</h4>
+                <p>Your sales team's time is valueable. Wasting it on fake leads from fraudulent
+                    sources costs more than the time spent on dead leads and traffic.</p>
             </div>
-            <div class="fl-div7">
-                <h4 class="txt31">A Lot of Fun</h4>
-                <p class="txt32">We enjoy practical jokes, <br> nicknames, and identifying <br> fraud all while having
-                    fun.</p>
+            <div class="beni-right">
+                <img src="https://res.cloudinary.com/den9ag5vj/image/upload/v1721125090/advibe_img8_lddk2p.webp" alt="img8">
             </div>
-            <div class="fl-div8">
-                <h4 class="txt33">Reliable</h4>
-                <p class="txt34">We enjoy practical jokes, <br> nicknames, and identifying <br> fraud all while having
-                    fun.</p>
+          </div>
+          <!-- 6th Page -->
+           <div class="icons">
+            <div class="icon-left">
+                <img src="https://res-console.cloudinary.com/den9ag5vj/thumbnails/v1/image/upload/v1724932974/dW5pdHJkLXBpY19vdGlkMTg=/drilldown" alt="united-img">
+                <h2>United</h2>
+                <p>Our culture is open and
+                    diverse, yet we are a united
+                    team in accomplishing our
+                    mission.</p>
             </div>
-        </flex-box>
+            <div class="icon-left">
+                <img src="https://res-console.cloudinary.com/den9ag5vj/thumbnails/v1/image/upload/v1724932952/ZnVuLXBpY195bmlkaTI=/drilldown" alt="fun-pic">
+                <h2>A Lot of Fun</h2>
+                <p>We enjoy practical jokes,
+                    nicknames, and identifying
+                    fraud all while having fun.
+                </p>
+            </div>
+            <div class="icon-left">
+                <img src="https://res-console.cloudinary.com/den9ag5vj/thumbnails/v1/image/upload/v1724932963/cmVsYWlibGUtcGljX3ZjamlpdQ==/drilldown" alt="reliable-pic">
+                <h2>Reliable</h2>
+                <p>We enjoy practical jokes,
+                    nicknames, and identifying
+                    fraud all while having fun.
+                </p>
+            </div>
+           </div>
     </section>
-
-    <section class="s2">
-        <flexbox class="fl-box5">
-            <div class="fl-div9">
-                <img src="https://advibe.xyz/assets/images/logo/logo-1.png" alt="logo" class="img9">
-                <h2 class="txt35">AdVibe</h2>
-            </div>
-            <div class="fl-div10">
-                <h2 class="txt36">Supported Links</h2>
-                <ul class="ul2">
-                    <li class="li2"><a class="link" href="">Home</a></li>
-                    <li class="li2"><a class="link" href="">About us</a></li>
-                    <li class="li2"><a class="link" href="">Terms & Policy</a></li>
-                    <li class="li2"><a class="link" href="">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="fl-div11">
-                <h2 class="txt37">Informaion</h2>
-                <i class="fa-sharp fa-solid fa-envelope-open-text"
-                    style="color: rgb(233, 153, 4); margin-left: 40vh; margin-top: 5.5vh;"></i>
-                <a href="mailto:m.azeem.j66@gmail.com" class="link1">m.azeem.j@gmail.com</a>
-                <i class="fa-solid fa-location-dot" id="icon"></i>
-                <p class="txt38">DHA Ph 9 Broadway, 220-A <br> Lahore, Punjab 54000</p>
-            </div>
-        </flexbox>
-        <hr class="hr">
-        <footer class="footer">
-            <p class="txt39">© Copyright 2024 AdVibe All Rights Reserved</p>
-        </footer>
-    </section>
-
+               <!-- Footer -->
+                <footer>
+                    <div class="footer">
+                        <div class="ft-left">
+                            <img src="https://advibe.xyz/assets/images/logo/logo-1.png" alt="footer-logo">
+                            <a href="#">
+                                <h2>Advibe</h2>
+                            </a>
+                        </div>
+                        <div class="ft-mid">
+                            <h2>Supported <br> Links</h2>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Term & Policy</a></li>
+                                <li><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="ft-right">
+                            <h2>Information</h2>
+                            <div class="mail">
+                            <i class="fa-sharp fa-solid fa-envelope-open-text"></i>
+                            <a href="mailto:m.azeem.j66@gmail.com" class="link1">m.azeem.j@gmail.com</a>
+                            </div>
+                            <div class="map">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>DHA Ph 9 Broadway, 220-A <br> Lahore, Punjab 54000</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
 </body>
 
 </html>
